@@ -1,4 +1,4 @@
-IOS Developer Ray Wenderlich의 "[UIKit Fundamentals](https://www.raywenderlich.com/16124941-uikit-fundamentals)"" 강의를 정리한 노트입니다. 
+IOS Developer Ray Wenderlich의 "[iOS User Interfaces with UIKit](https://www.raywenderlich.com/ios/paths/uikit)"" 강의를 정리한 노트입니다. 
 
 ## 안내
 
