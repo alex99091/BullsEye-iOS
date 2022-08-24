@@ -32,6 +32,9 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Nf3-q5-Kjq"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -44,11 +47,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-Mp-OoT">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-Mp-OoT" userLabel="Adjective Text Field">
                                                 <rect key="frame" x="78.5" y="0.0" width="295.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="u0d-yj-SDJ"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -66,6 +72,9 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="X80-dc-wPg"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -79,7 +88,7 @@
                                         <rect key="frame" x="-2" y="210.5" width="378" height="31"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="changeNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="0B0-KP-yke"/>
+                                            <action selector="changeNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="RUf-hN-3cN"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-wl-kc8">
@@ -101,7 +110,7 @@
                                             <segment title="Horror"/>
                                         </segments>
                                         <connections>
-                                            <action selector="changeStoryType:" destination="BYZ-38-t0r" eventType="valueChanged" id="SLb-dS-1HW"/>
+                                            <action selector="changeStoryType:" destination="BYZ-38-t0r" eventType="valueChanged" id="OPe-dW-DaA"/>
                                         </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJo-dW-cYt">
@@ -109,6 +118,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Generate Story Prompt"/>
+                                        <connections>
+                                            <action selector="GenerateStoryPrompt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjP-xt-962"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -122,11 +134,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="adjectiveTextField" destination="yRY-nl-d8Q" id="qSs-f2-FTY"/>
+                        <outlet property="adjectiveTextField" destination="1SM-Mp-OoT" id="76F-SL-ngH"/>
                         <outlet property="nounTextField" destination="WdT-mJ-7Hn" id="S4r-WE-yot"/>
                         <outlet property="numberLabel" destination="mqq-kN-cJT" id="VkX-CF-DYS"/>
-                        <outlet property="numberSlider" destination="HY8-XO-QQ1" id="Lp8-II-K8l"/>
-                        <outlet property="verbTextField" destination="mdM-Bj-gPQ" id="K79-8o-md9"/>
+                        <outlet property="numberSlider" destination="HY8-XO-QQ1" id="zun-kc-mB3"/>
+                        <outlet property="verbTextField" destination="1SM-Mp-OoT" id="i81-Zk-gGw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
